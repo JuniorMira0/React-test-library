@@ -9,7 +9,7 @@ import './favorite-pokemons.css';
 const ZERO = 0;
 
 class FavoritePokemons extends React.Component {
-  static notFound() {
+  static notFound() {   
     return (
       <div>
         <p>{ `No favorite pokemon found` }</p>
