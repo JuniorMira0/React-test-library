@@ -53,5 +53,6 @@ describe('Testa o componente <Pokemon />', () => {
 
     const favStar = screen.getByAltText('Pikachu is marked as favorite');
     expect(favStar).toBeInTheDocument();
+    expect(favStar).toHaveAttribute('src', '/star-icon.svg');
   });
 });

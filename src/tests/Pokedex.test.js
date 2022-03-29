@@ -20,4 +20,13 @@ describe('Teste o componente <Pokedex.js />', () => {
 
     expect(nextPokemon).toBeInTheDocument();
   });
+  it('Testa se é mostrado apenas um Pokémon por vez.', () => {
+    renderWithRoter(<App />);
+
+    const pokeOne = screen.getAllByTestId('pokemon-name');
+    expect(pokeOne.length).toBe(1);
+  });
+  it('Testa se a Pokédex tem os botões de filtro.', () => {
+    renderWithRoter(<App />);
+  });
 });
